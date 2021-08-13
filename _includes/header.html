@@ -3,11 +3,13 @@
 
 <header>
   <div class="row text-center">
-    <div class="col-lg-6 offset-lg-3 col-sm-8 offset-sm-2">
+    <!--<div class="col-lg-6 offset-lg-3 col-sm-8 offset-sm-2">-->
+    <div class="col-lg-3 offset-lg-1 col-sm-8 offset-sm-2">
       <img class="img-fluid" {{ site.default_header_img_dimensions }} src="/img/{{ header.picture }}" alt="portrait">
     </div>
-    <div class="col-12">
-      <h1>{{ header.name }}<br><span class="font-weight-bold">{{ header.surname }}</span></h1>
+    <div class="col-lg-8 col-sm-12">
+      <!--<h1>{{ header.name }}<br><span class="font-weight-bold">{{ header.surname }}</span></h1>-->
+      <h1>{{ header.name }} {{ header.surname }}</h1>
       <p class="lead">
           {% for lead in header.leads %}
           {{ lead }}{% if lead != header.leads.last %}
@@ -16,9 +18,11 @@
       </p>
       <p>
         {% for email in contact.emails %}
-        <a href="mailto:{{ email }}">{{ email }}</a>{% if email != contact.emails.last %}
+        <i class="fas fa-envelope"></i>  <a href="mailto:{{ email }}"></a>{{ email }}</a>{% if email != contact.emails.last %}
         <br class="d-inline d-sm-none"><span class="d-none d-sm-inline">&ensp;|&ensp;</span>{% endif %}
         {% endfor %}
+
+        <i class="fab fa-twitter"></i>  <a href="{{ contact.twitter-link }}">{{ contact.twitter }}</a>
     
         {% if contact.phone %}
         <br class="d-inline d-sm-none"><span class="d-none d-sm-inline">&ensp;|&ensp;</span>
@@ -30,6 +34,11 @@
         <a href="{{ contact.vcard }}">{{ contact.vcard_label }}</a>
         {% endif %}
       </p>
+    </div>
+    <div class="col-lg-12 col-sm-12 text-left mt-4">
+      <p>{{header.about1}}</p>
+      <p>{{header.about2}}</p>
+      <p>{{header.about3}}</p>
     </div>
   </div>
 </header>

@@ -1,12 +1,15 @@
 ---
-picture: daniel-limberger-mar-2019.jpg
-name: Daniel
-surname: Limberger
+picture: jl.jpg
+name: Jiannan
+surname: Li
 leads: 
-- Real-time Graphics Engineer
-- Researcher
-- Entrepreneur
-about: >
-  I'm designing, developing, implementing, and maintaining mostly interactive computer graphics techniques and systems.
-  As a PhD student in the <a href='https://hpi.de/doellner/index.html'>Computer Graphics Systems group</a> at the <a href='https://hpi.de/'>Hasso Plattner Institute</a> I study, teach, supervise, and publish in the fields of massive, multivariate data visualization, human-computer interaction, as well as programming and computer graphics fundamentals.
-  As a co-founder and manager of <a href='https://www.cginternals.com'>CG Internals</a>, I offer graphics engineering related products, services, and solutions to the industry.
+- PhD Student
+- HCI & HRI
+- Remote Collaborative Systems
+about1: >
+  I am a PhD student at the <a href='https://www.dgp.toronto.edu/'>Dynamic Graphics Project</a>, University of Toronto, working with <a href='https://www.dgp.toronto.edu/~ravin/'>Ravin Balakrishnan</a> and <a href="https://www.tovigrossman.com/">Tovi Grossman</a>. 
+about2: >
+  My research mainly explores novel interface and artifact designs that use robots to unlock unique telepresence and communication in remote collaborative systems, especially for a group of users who can share and reconfigure the robots.
+about3: >
+  I am also interested in the potential of virtual reality for people to relive and reinterpret other people's experiences, such as immersive tours, or art creation sessions.    
+
